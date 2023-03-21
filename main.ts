@@ -16,16 +16,7 @@ let lijst = [
 ]
 while (true) {
     let som = 0
-    lijst[0] = pins.analogReadPin(AnalogPin.P0)
-    lijst[1] = pins.analogReadPin(AnalogPin.P0)
-    lijst[2] = pins.analogReadPin(AnalogPin.P0)
-    lijst[3] = pins.analogReadPin(AnalogPin.P0)
-    lijst[4] = pins.analogReadPin(AnalogPin.P0)
-    lijst[5] = pins.analogReadPin(AnalogPin.P0)
-    lijst[6] = pins.analogReadPin(AnalogPin.P0)
-    lijst[7] = pins.analogReadPin(AnalogPin.P0)
-    lijst[8] = pins.analogReadPin(AnalogPin.P0)
-    lijst[9] = pins.analogReadPin(AnalogPin.P0)
+    lijst = pins.digitalReadPin(DigitalPin.P0)
     metingen = lijst
     meting += som
     min = Math.min(0, 0)
@@ -37,6 +28,12 @@ while (true) {
     BaudRate.BaudRate115200
     )
     serial.writeLine("" + (som))
+}
+if (true) {
+	
+}
+if (true) {
+	
 }
 basic.forever(function () {
 	
